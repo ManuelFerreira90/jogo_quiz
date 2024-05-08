@@ -8,7 +8,11 @@ Este projeto é um jogo de quiz de Verdadeiro ou Falso desenvolvido em Flutter. 
 - Final do jogo com contagem de acertos e erros.
 
 ## Capturas de Tela
-
+<div style="display: flex;">
+  <img src="https://github.com/ManuelFerreira90/jogo_quiz/assets/105729881/0625a418-2228-4b44-8ebc-fc9b99fe7bac" alt="Tela Inicial" width="200" />
+  <img src="https://github.com/ManuelFerreira90/jogo_quiz/assets/105729881/777fe328-bda9-4e64-a30e-e62befc7b739" alt="Jogo" width="200" />
+  <img src="https://github.com/ManuelFerreira90/jogo_quiz/assets/105729881/ae537723-54e3-41c2-b3c9-c589d2f8702e" alt="Tela de Resultados" width="200" />
+</div>
 
 ## Instalação
 1. Faça o download do APK mais recente da seção de releases.
