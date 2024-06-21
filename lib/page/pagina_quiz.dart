@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jogo_quiz/componentes/botao_acao.dart';
+import 'package:jogo_quiz/components/botao_acao.dart';
 import '../classes/gerenciar_quiz.dart';
 import 'pagina_final.dart';
 import '../constantes.dart';

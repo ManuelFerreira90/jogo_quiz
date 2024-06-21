@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'pagina_quiz.dart';
-import '../componentes/botao_acao.dart';
+import '../components/botao_acao.dart';
 import '../constantes.dart';
 
 class PaginaInicial extends StatelessWidget {
@@ -16,25 +16,28 @@ class PaginaInicial extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Expanded(
+              const Expanded(
                 child: Padding(
                 padding: kPaddingPadrao,
-                child: Image.asset('imagens/Frame 2.png'),
+                child: Column(
+                  children: [
+                    Image(image: AssetImage('imagens/banner_quiz.png',),),
+                  ],
+                ),
               )),
               Padding(
                 padding: kPaddingPadrao,
                 child: SizedBox(
                   height: 80,
                   child: BotaoAcao(
-                    corBotao: kCorBotaoPrimario,
-                    texto: 'Começar',
-                    aoPressionar:() {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => PaginaQuiz()),
-                      );
-                    }
-                  ),
+                      corBotao: kCorBotaoPrimario,
+                      texto: 'Começar',
+                      aoPressionar: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => PaginaQuiz()),
+                        );
+                      }),
                 ),
               ),
             ],
@@ -44,5 +47,3 @@ class PaginaInicial extends StatelessWidget {
     );
   }
 }
-
-

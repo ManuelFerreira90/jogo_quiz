@@ -40,7 +40,7 @@ class GerenciarQuiz {
   }
 
   void setPergunta(){
-    this.perguntaAtual = this.perguntas[this.index];
+    if(index < perguntas.length) this.perguntaAtual = this.perguntas[this.index];
   }
 
   void incrementarIndex(){
@@ -57,7 +57,6 @@ class GerenciarQuiz {
       pontos.add(Icon(Icons.close, color: Colors.red,));
     }
     this.incrementarIndex();
-    print(index);
     return;
   }
 
