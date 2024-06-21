@@ -11,37 +11,37 @@ class PaginaInicial extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const Expanded(
-                child: Padding(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Expanded(
+              child: Padding(
                 padding: kPaddingPadrao,
-                child: Column(
-                  children: [
-                    Image(image: AssetImage('imagens/banner_quiz.png',),),
-                  ],
-                ),
-              )),
-              Padding(
-                padding: kPaddingPadrao,
-                child: SizedBox(
-                  height: 80,
-                  child: BotaoAcao(
-                      corBotao: kCorBotaoPrimario,
-                      texto: 'Começar',
-                      aoPressionar: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => PaginaQuiz()),
-                        );
-                      }),
+                child: Image(
+                  image: AssetImage('imagens/banner_quiz.png'),
                 ),
               ),
-            ],
-          ),
+            ),
+            Padding(
+              padding: kPaddingPadrao,
+              child: SizedBox(
+                height: 80,
+                child: BotaoAcao(
+                  corBotao: kCorBotaoPrimario,
+                  texto: 'Começar',
+                  aoPressionar: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PaginaQuiz(),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

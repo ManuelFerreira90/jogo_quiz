@@ -14,70 +14,71 @@ class PaginaFinal extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Expanded(
-                flex: 2,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Center(
-                      child: Text(
-                        'Final do Jogo',
-                        style: TextStyle(
-                          fontSize: 40.0,
-                        ),
-                      ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    'Final do Jogo',
+                    style: TextStyle(
+                      fontSize: 40.0,
                     ),
-                    Center(
-                      child: Text(
-                        'Acertos: $acertos',
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Text(
+                        'Acertos: ',
+                        style: const TextStyle(fontSize: 25.0,),
+                      ),
+                      Text(
+                        '$acertos',
+                        style: const TextStyle(fontSize: 25.0, color: Colors.green, ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Text(
+                        'Erros: ',
                         style: const TextStyle(
                           fontSize: 25.0,
                         ),
                       ),
-                    ),
-                    Center(
-                      child: Text(
-                        'Erros: $erros',
+                      Text(
+                        '$erros',
                         style: const TextStyle(
                           fontSize: 25.0,
+                          color: Colors.red
                         ),
                       ),
-                    ),
-                  ],
-                ),
+                    ],
+                  ),
+                ],
               ),
-              Expanded(
-                flex: 1,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Padding(
-                      padding: kPaddingPadrao,
-                      child: SizedBox(
-                        height: 80,
-                        child: BotaoAcao(
-                            corBotao: kCorBotaoPrimario,
-                            texto: 'Ir para tela inicial',
-                            aoPressionar: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const PaginaInicial()),
-                              );
-                            }),
-                      ),
-                    ),
-                  ],
-                ),
+            ),
+            Padding(
+              padding: kPaddingPadrao,
+              child: SizedBox(
+                height: 80,
+                child: BotaoAcao(
+                    corBotao: kCorBotaoPrimario,
+                    texto: 'Ir para tela inicial',
+                    aoPressionar: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const PaginaInicial()),
+                      );
+                    }),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
