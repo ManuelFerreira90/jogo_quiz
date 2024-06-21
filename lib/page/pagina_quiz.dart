@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jogo_quiz/classes/pergunta_quiz.dart';
 import 'package:jogo_quiz/components/botao_acao.dart';
 import '../classes/gerenciar_quiz.dart';
 import 'pagina_final.dart';
@@ -107,5 +108,9 @@ class _PaginaQuizState extends State<PaginaQuiz> {
         ),
       ),
     );
+  }
+
+  void _iniciarQuiz() {
+
   }
 }

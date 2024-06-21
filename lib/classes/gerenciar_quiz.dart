@@ -36,6 +36,7 @@ class GerenciarQuiz {
     this.index = 0;
     this.erros = 0;
     this.acertos = 0;
+    this.perguntas.shuffle();
     this.perguntaAtual = this.perguntas[this.index];
   }
 
