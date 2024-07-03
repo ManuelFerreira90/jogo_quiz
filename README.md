@@ -1,4 +1,4 @@
-# jogo_quiz
+# jogo_quiz ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
 Este projeto é um jogo de quiz de Verdadeiro ou Falso desenvolvido em Flutter. O jogo permite aos usuários testar seus conhecimentos respondendo a perguntas verdadeiras ou falsas. Aplicativo desenvolvido com o objetivo de praticar e aprimorar habilidades no uso do Flutter. 
 
